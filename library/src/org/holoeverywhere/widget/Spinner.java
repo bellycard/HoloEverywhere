@@ -638,6 +638,10 @@ public class Spinner extends AbsSpinner implements OnClickListener {
         super.setOnItemClickListener(l);
     }
 
+    public void setOnItemSelectedListener(OnItemSelectedListener listener) {
+    	super.setOnItemSelectedListener(listener);
+    }
+    
     public void setPopupBackgroundDrawable(Drawable background) {
         if (!(mPopup instanceof DropdownPopup)) {
             Log.e(Spinner.TAG,
